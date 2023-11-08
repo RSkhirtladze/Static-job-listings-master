@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: League Spartan;
+}
+
+:root {
+  --darkishBlue: #5ca5a5;
+  --veryLightBlue: #effafa;
+  --white: #fff;
+  --grayish: #7c8f8f;
+  --black: #2b3939;
+  --lightGray: #b7c4c4;
+}
+
+html {
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: var(--darkishBlue);
+}
+
+header img {
+  width: 100%;
+}
+
+.mobileResponsive {
+  display: block;
+}
+
+.desktopResponsive {
+  display: none;
+}
+
+main {
+  width: 100%;
+  flex-grow: 1;
+  background-color: var(--veryLightBlue);
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.5rem 2.12rem 1.5rem;
+}
+
+#filterDiv {
+  width: 100%;
+  background-color: var(--white);
+  border-radius: 0.3125rem;
+  box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  padding: 1.5rem;
+  min-height: 4.5rem;
+  margin-top: -2.25rem;
+  margin-bottom: 1rem;
+}
+
+.clearDiv {
+  color: var(--grayish);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: -0.00769rem;
+}
+
+.clearDiv:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.filtersContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.filter {
+  height: 2rem;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.filterType {
+  width: 100%;
+  background: rgba(92, 165, 165, 0.1);
+
+  padding: 0.5rem 0.5rem 0.19rem 0.5rem;
+  border-radius: 0.25rem 0 0 0.25rem;
+  color: var(--darkishBlue);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: -0.00769rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deleteFilter {
+  width: 100%;
+}
+
+.deleteFilter:hover {
+  cursor: pointer;
+}
+
+.jobListing {
+  width: 100%;
+  border-radius: 0.3125rem;
+  margin-top: 1rem;
+  background: var(--white);
+  box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+  display: flex;
+  flex-direction: row;
+  margin-top: 2.5rem;
+}
+
+.sideLine {
+  width: 0.3125rem;
+  border-radius: 6.25rem 0rem 0rem 6.25rem;
+  background: var(--darkishBlue);
+}
+
+.mainJobContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.5rem;
+}
+
+.jobLogoContainer {
+  width: 3rem;
+  height: 3rem;
+  margin-top: -1.5rem;
+}
+
+.jobLogoContainer img {
+  width: 100%;
+}
+
+.jobDescriptionContainer {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.56rem;
+}
+
+.companyInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.companyName {
+  display: flex;
+  align-items: center;
+  color: var(--darkishBlue);
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+
+.isNew {
+  margin-left: 2.06rem;
+  height: 1.5rem;
+  border-radius: 0.75rem;
+  background: var(--darkishBlue);
+  padding: 0.44rem 0.5rem 0.19rem 0.5rem;
+
+  display: flex;
+  align-items: center;
+
+  color: var(--white);
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 0.875rem; /* 100% */
+  letter-spacing: -0.00675rem;
+  text-transform: uppercase;
+}
+
+.isFeatured {
+  margin-left: 0.5rem;
+  height: 1.5rem;
+  border-radius: 0.75rem;
+  background: var(--black);
+  padding: 0.44rem 0.5rem 0.19rem 0.5rem;
+
+  display: flex;
+  align-items: center;
+
+  color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 0.875rem; /* 100% */
+  letter-spacing: -0.00675rem;
+  text-transform: uppercase;
+}
+
+.role {
+  color: var(--black);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+
+.role:hover {
+  cursor: pointer;
+  color: var(--darkishBlue);
+}
+
+.jobSpecifications {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.specification {
+  color: var(--grayish);
+
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem; /* 150% */
+  letter-spacing: -0.00769rem;
+  white-space: nowrap;
+}
+
+.specificationDot {
+  width: 0.25rem;
+  height: 0.25rem;
+  background-color: var(--lightGray);
+  border-radius: 50%;
+  margin-top: -0.3rem;
+}
+
+.lineSeparator {
+  margin-top: 1rem;
+  width: 90%;
+  background: var(--lightGray);
+  height: 0.0625rem;
+}
+
+.jobTags {
+  margin: 1rem 0;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.jobTag {
+  background: rgba(92, 165, 165, 0.1);
+
+  padding: 0.5rem 0.5rem 0.19rem 0.5rem;
+  border-radius: 0.25rem;
+  color: var(--darkishBlue);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: -0.00769rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jobTag:hover {
+  cursor: pointer;
+  background: rgba(92, 165, 165, 1);
+  color: var(--white);
+}
+
+@media (min-width: 54rem) {
+  .mobileResponsive {
+    display: none;
+  }
+
+  .desktopResponsive {
+    display: block;
+  }
+
+  main {
+    padding: 0 1.5rem 2.12rem 1.5rem;
+  }
+
+  .mainJobContainer {
+    width: 100%;
+    flex-direction: row;
+    padding: 2rem 3rem 2rem 2.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .jobLogoContainer {
+    margin: 0;
+
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .jobLogoContainer img {
+    width: 100%;
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+
+  .jobDescriptionContainer {
+    width: auto;
+    margin: 0 0 0 1.5rem;
+    flex-direction: column;
+  }
+
+  .companyName {
+    font-size: 1.125rem;
+  }
+
+  .role {
+    font-size: 1.375rem;
+    white-space: nowrap;
+  }
+
+  .jobSpecifications {
+    gap: 1rem;
+  }
+
+  .specification {
+    font-size: 1.125rem;
+    letter-spacing: -0.00863rem;
+  }
+  .jobTags {
+    margin: 1rem 0 1rem 2rem;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-end;
+  }
+}
